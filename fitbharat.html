@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FitBharat - Your Fitness Companion</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body, html {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      overflow: hidden;
+    }
+    body {
+      background-image: url('https://i.postimg.cc/0Q1z0TWh/No-Pain-No-Gain.jpg');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      color: white;
+    }
+    .overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      background-color: rgba(0, 0, 0, 0.75); /* Dark overlay */
+      z-index: 1;
+    }
+    .content {
+      position: relative;
+      z-index: 2;
+    }
+  </style>
+</head>
+<body class="font-sans flex flex-col min-h-screen">
+
+  <!-- Dark Overlay -->
+  <div class="overlay"></div>
+
+  <!-- Page Content -->
+  <div class="content flex flex-col min-h-screen">
+
+    <!-- Header -->
+    <header class="px-6 py-4 flex justify-between items-center">
+      <div class="text-2xl font-bold text-orange-400">FitBharat</div>
+      <nav class="space-x-6 text-white">
+        <a href="#" class="hover:text-orange-300">Home</a>
+        <a href="#" class="hover:text-orange-300">Workout</a>
+        <a href="#" class="hover:text-orange-300">Diet</a>
+        <a href="#" class="hover:text-orange-300">Profile</a>
+      </nav>
+    </header>
+
+    <!-- Main Section -->
+    <main class="flex-1 flex items-center justify-center text-center px-4">
+      <div>
+        <h1 class="text-5xl md:text-6xl font-extrabold mb-4 drop-shadow-md">Welcome to FitBharat</h1>
+        <p class="text-lg md:text-xl mb-6 text-gray-300">India’s AI-powered fitness journey begins here.</p>
+        <a href="#" class="inline-block bg-orange-500 hover:bg-orange-600 text-white px-6 py-3 rounded-lg transition shadow-lg">
+          Get Started
+        </a>
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="py-4 text-center text-sm text-gray-400 z-10">
+      © 2025 FitBharat. All rights reserved.
+    </footer>
+
+  </div>
+</body>
+</html>
+
