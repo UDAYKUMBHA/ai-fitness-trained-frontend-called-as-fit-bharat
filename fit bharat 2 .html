@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>FitBharat</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', sans-serif;
+      color: white;
+      background: url('https://i.postimg.cc/0Q1z0TWh/No-Pain-No-Gain.jpg') no-repeat center center fixed;
+      background-size: cover;
+      height: 100vh;
+    }
+
+    header {
+      background-color: rgba(0, 0, 0, 0.8);
+      padding: 15px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      font-size: 24px;
+      font-weight: bold;
+      color: #00ffcc;
+    }
+
+    nav a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    nav a:hover {
+      color: #00ffcc;
+    }
+
+    main {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      height: 80vh;
+      background-color: rgba(0, 0, 0, 0.5);
+    }
+
+    main h1 {
+      font-size: 48px;
+      margin-bottom: 20px;
+    }
+
+    .start-btn {
+      padding: 12px 25px;
+      font-size: 18px;
+      border: none;
+      border-radius: 8px;
+      background-color: #00ffcc;
+      color: #000;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    .start-btn:hover {
+      background-color: #00cc99;
+    }
+
+    footer {
+      background-color: rgba(0, 0, 0, 0.8);
+      text-align: center;
+      padding: 10px;
+      position: fixed;
+      width: 100%;
+      bottom: 0;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">FitBharat</div>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">Workout</a>
+      <a href="#">Diet</a>
+      <a href="#">Profile</a>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Welcome to FitBharat</h1>
+    <button class="start-btn" onclick="getStarted()">Get Started</button>
+  </main>
+
+  <footer>
+    &copy; 2025 FitBharat. All rights reserved.
+  </footer>
+
+  <script>
+    function getStarted() {
+      alert("Welcome to FitBharat! Let's begin your fitness journey.");
+    }
+  </script>
+</body>
+</html>
